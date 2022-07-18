@@ -9,7 +9,7 @@ document.write("<br>");
 document.write("<b>Professor</b>");
 document.write("<br>");
 
-document.write("<a href=\"https:\/\/cs.scu.edu.cn\/info\/1279\/17062.htm">Sichuan University<\/a></b>");
+document.write("<a href=\"https:\/\/cs.scu.edu.cn\/info\/1279\/17062.htm\">SiChuan University<\/a></b>"); 
 
 document.write("<br>");
 document.write("<br>");
