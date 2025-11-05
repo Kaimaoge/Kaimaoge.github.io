@@ -1,99 +1,316 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Yuankai Wu</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26204762-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<script async src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prof. Avery Kim — Computer Science</title>
+    <meta name="description" content="Academic homepage of Prof. Avery Kim, Computer Science." />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-
-
   <body>
-    <div id="page">
-      <div id="header_wrapper">
-        <div id="header" class="main">
-          <ul class="menu">
-            <li><a class="active" href="index.html">About Me</a></li>
-            <li><a href="news.html"> News </a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="talks.html">Talks</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="CV.html">CV</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./" aria-label="Homepage">
+          <span class="logo" aria-hidden="true">{YW}</span>
+          <span class="brand-text">Prof. Yuankai Wu</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="students.html">Students</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="talks.html">Talks</a>
+          <a href="cv.html">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Prof. Yuankai Wu</h1>
+            <p class="subtitle">Professor • College of Computer Science • Sichuan University</p>
+            <p class="lede">
+              I develop intelligent solutions using data-driven approaches and machine learning, with emphasis
+              on deep learning, spatiotemporal data analysis, and intelligent decision-making and control.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#publications">Selected Publications</a>
+              <a class="btn ghost" href="students.html">Students</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="assets/img/professor.jpg" alt="Portrait of Prof. Yuankai Wu" />
+            <div class="icon-links" aria-label="External profiles">
+              <a href="https://scholar.google.com/citations?user=L9b-8ZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+                <img src="assets/img/icon-scholar.svg" alt="Google Scholar" />
+              </a>
+              <a href="https://github.com/Kaimaoge" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <img src="assets/img/icon-github.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container flow">
+          <h2>About</h2>
+          <p>
+            I'm a Tenure-Track Professor (position equivalent to full professor) at the College of Computer
+            Science, Sichuan University. My primary focus is on developing intelligent solutions using data-driven
+            approaches and machine learning. Previously, I was an IVADO postdoctoral fellow at McGill University.
+            I completed my Ph.D. at Beijing Institute of Technology.
+          </p>
+          <p>
+            My research interests include deep learning, spatiotemporal data analysis, intelligent decision making and control,
+            and applications across air traffic management and intelligent transportation systems. My publications have
+            received 4000+ citations on Google Scholar.
+          </p>
+          <ul class="meta">
+            <li><strong>Affiliation:</strong> College of Computer Science, Sichuan University</li>
+            <li><strong>Location:</strong> Chengdu, Sichuan, China</li>
+            <li><strong>Email:</strong> wuyk0@scu.edu.cn</li>
           </ul>
-          <br>
-          <script src="table_header.js"></script> </div>
+          <h3>Research Interests</h3>
+          <ul class="tags">
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Spatiotemporal Modeling</li>
+            <li>Intelligent Transportation</li>
+            <li>Air Traffic Management</li>
+            <li>Data Science</li>
+            <li>Reinforcement Learning</li>
+          </ul>
+        </div>
+      </section>
 
-      <div id="wrapper" class="main">
-        <div id="content">
+      <section id="update" class="section section-alt">
+        <div class="container flow">
+          <h2>Personal Update</h2>
+          <p>
+            I am recruiting Ph.D. and MSE students for Fall 2026 in: (1) Machine Learning and Data Science,
+            (2) Algorithms for air traffic management and intelligent transportation systems, (3) Spatiotemporal data modeling.
+            If you are interested, please take a look and contact me.
+          </p>
+        </div>
+      </section>
 
-<br>
-<br>
-<br>
-<b>Personal Update:</b><br> I am looking to recruit Ph.D and MSE students for Fall'26 in the following areas: 1) Machine Learning and Data Science, 2) Algorithms for air traffic management and intelligent transportation systems. 3) Spatiotemporal data modeling. If you are interested, welcome to take a look and <a href = "mailto: wuyk0@scu.edu.cn">contact me</a>.
-<br>
-<br>
+      <section id="news" class="section">
+        <div class="container flow">
+          <h2>Selected News</h2>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Selected among Stanford/Elsevier's Top 2% Scientists for 2023</span>
+              <span class="pub-venue">September 2024 • Ranked top 1% by performance for 2023.</span>
+            </li>
+            <li>
+              <span class="pub-title">First cohort of the National Program for Recruiting Overseas Postdoctoral Talents</span>
+              <span class="pub-venue">March 2024</span>
+            </li>
+            <li>
+              <span class="pub-title">Promoted to IEEE Senior Member</span>
+              <span class="pub-venue">October 2023</span>
+            </li>
+            <li>
+              <span class="pub-title">Awarded Tianfu Emei plan of Sichuan Province</span>
+              <span class="pub-venue">April 2023</span>
+            </li>
+            <li>
+              <span class="pub-title">2022 IEEE TII Outstanding Paper Award</span>
+              <span class="pub-venue">August 2022</span>
+            </li>
+            <li>
+              <span class="pub-title">Tenure-track professor at Sichuan University (level equivalent to full professor)</span>
+              <span class="pub-venue">March 2022</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<h1>About Me</h1>
-<hr> <br>
-I'm a Tenure-Track Professor, holding a position equivalent to a full professor, at the <a href="https://cs.scu.edu.cn/info/1279/17062.htm">College of Computer Science at Sichuan University</a>. My primary focus is on developing intelligent solutions using data-driven approaches and machine learning.
-Before my current position, I worked as an IVADO postdoctoral fellow at McGill University. I completed my PhD at Beijing Institute of Technology.
-        My research interests span various areas, including deep learning, spatiotemporal data analysis, and intelligent decision making and control.
-        I have authored research papers that have garnered over 4000 citations on <a href="https://scholar.google.com/citations?user=L9b-8ZwAAAAJ&hl=en">Google Scholar</a>. Some of my work has been published in renowned scientific journals and conferences.<br>
+      <section id="publications" class="section section-alt">
+        <div class="container flow">
+          <h2>Selected Publications</h2>
+          <ol class="pub-list">
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/airport-diffusion.svg" alt="Airport network diffusion forecasting" />
+              <div>
+                <span class="pub-title">Long-Term Airport Network Performance Forecasting With Linear Diffusion Graph Networks</span>
+                <span class="pub-authors"><strong>Yuankai Wu</strong>, Jing Yang, Xiaoxu Chen, Yi Lin, Hongyu Yang</span>
+                <span class="pub-venue">IEEE Transactions on Intelligent Transportation Systems, 2024.</span>
+                <p class="pub-summary">We propose a linear diffusion-based graph network to capture long-horizon spatial propagation for airport network performance, achieving accurate delay forecasting with efficient training.</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/msgnet.svg" alt="MSGNet multiscale series correlations" />
+              <div>
+                <span class="pub-title">MSGNet: Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting</span>
+                <span class="pub-authors">Cai Wanlin, Yuxuan Liang, Xianggen Liu, Jianshuai Feng, <strong>Yuankai Wu*</strong></span>
+                <span class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence, 2024.</span>
+                <p class="pub-summary">A multiscale architecture that learns cross-series correlations to improve multivariate forecasting across diverse horizons and datasets.</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/flight-delay.svg" alt="Flight delay spatiotemporal propagation" />
+              <div>
+                <span class="pub-title">Spatiotemporal Propagation Learning for Network-Wide Flight Delay Prediction</span>
+                <span class="pub-authors"><strong>Yuankai Wu</strong>, Hongyu Yang, Yi Lin, Hong Liu</span>
+                <span class="pub-venue">IEEE Transactions on Knowledge and Data Engineering, 2023.</span>
+                <p class="pub-summary">A propagation-aware modeling framework that learns how delays spread across the air network, enabling accurate system-wide predictions.</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/ignnk.svg" alt="IGNNK spatiotemporal kriging" />
+              <div>
+                <span class="pub-title">Inductive Graph Neural Networks for Spatiotemporal Kriging</span>
+                <span class="pub-authors"><strong>Yuankai Wu</strong>, Dingyi Zhuang, Aurelie Labbe, Lijun Sun</span>
+                <span class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence, 2021.</span>
+                <p class="pub-summary">Introduces an inductive GNN for kriging that generalizes to unseen nodes and times, improving imputation on sparse spatiotemporal data.</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/climate-sr.svg" alt="Climate super-resolution emulator" />
+              <div>
+                <span class="pub-title">Deep Learning‐Based Super‐Resolution Climate Simulator‐Emulator Framework for Urban Heat Studies</span>
+                <span class="pub-authors"><strong>Yuankai Wu</strong>, Bernardo Teufel, Laxmi Sushama, Stephane Belair, Lijun Sun</span>
+                <span class="pub-venue">Geophysical Research Letters, 2021.</span>
+                <p class="pub-summary">A deep super-resolution pipeline that emulates high-resolution climate fields for urban heat analysis at reduced computational cost.</p>
+              </div>
+            </li>
+            <li class="pub-item">
+              <img class="pub-thumb" src="assets/img/pubs/urban-mobility.svg" alt="Urban mobility disentangled representation" />
+              <div>
+                <span class="pub-title">Understanding and modeling urban mobility dynamics via disentangled representation learning</span>
+                <span class="pub-authors">Hailong Zhang, <strong>Yuankai Wu*</strong>, Huachun Tan, Hanxuan Dong, Fan Ding, Bin Ran</span>
+                <span class="pub-venue">IEEE Transactions on Intelligent Transportation Systems, 2020.</span>
+                <p class="pub-summary">A disentanglement approach that separates external factors and intrinsic patterns to model urban mobility dynamics more robustly.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
+      <section id="projects" class="section">
+        <div class="container flow">
+          <h2>Projects</h2>
+          <p>My goal is to: (1) develop supervised and unsupervised ML tools for spatial and temporal dependencies, (2) make reliable predictions over space and time, (3) establish multi-agent and multi-objective RL algorithms, and (4) achieve system-level control. Applications include spatiotemporal kriging, traffic forecasting, freeway management, and HEV energy management.</p>
 
-<br>
-Fortunately, I have also received several awards, including the first cohort of the National Program for Recruiting Overseas Postdoctoral Talents, 2023 Tianfu Emei plan of Sichuan province, 2022 IEEE TII Outstanding Paper Award, <a href="https://ivado.ca/en/spotlight-on-our-academic-community/?programmes=postdoctoral-research-funding">IVADO Postdoc funding 2019</a> (by Institute for Data Valorisation (IVADO)) and <a href="https://www.cie-info.org.cn/">Second Prize for Science & technology Development/Achievement of the Chinese Institute of Electronics</a>.
-<br>
+          <h3>Research Projects</h3>
+          <div class="grid projects">
+            <article class="card">
+              <img class="card-thumb" src="assets/img/projects/ignnk.svg" alt="IGNNK: inductive GNN for spatiotemporal kriging" />
+              <h3>IGNNK</h3>
+              <p>Inductive Graph Neural Networks for Spatiotemporal Kriging enabling generalization to unseen sensors and timestamps for robust imputation.</p>
+              <p class="meta"><a href="#">Code</a></p>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="assets/img/projects/drl-energy.svg" alt="Deep RL for energy management" />
+              <h3>DRL-Energy-Management</h3>
+              <p>Deep reinforcement learning based energy management for hybrid electric vehicles under real-world driving scenarios.</p>
+              <p class="meta"><a href="#">Code</a></p>
+            </article>
+            <article class="card">
+              <img class="card-thumb" src="assets/img/projects/msgnet.svg" alt="MSGNet multiscale forecasting" />
+              <h3>MSGNet</h3>
+              <p>Learning multi-scale inter-series correlations for accurate multivariate time series forecasting.</p>
+              <p class="meta"><a href="#">Code</a></p>
+            </article>
+          </div>
 
+          <h3>Granted Research Funding (selected)</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Deep Spatio-Temporal Representation Techniques for Multi-Modal OD Flow</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong> • National Natural Science Foundation of China • ￥300,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Prediction and Decision-Making Intelligence for Transportation Systems</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong> • National Program for Recruiting Overseas Postdoctoral Talents • ￥900,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Image Detection for Transmission Components via Spatial Scale Standardization</span>
+              <span class="pub-authors">Co-PI: <strong>Yuankai Wu</strong>, Xia Feng • State Grid Hebei Electric Power Research Institute • ￥900,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Spatiotemporal Data-Driven Intelligent Transportation System Modeling</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong> • Tianfu Emei plan of Sichuan Province • ￥500,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Flight Delay Modeling and Prediction with Graph Neural Networks</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong> • NSFC of Sichuan Province (Young Scientists Fund) • ￥100,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Survey on Deep Learning for ITS</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong>, Jianshuai Feng, Zhenxing Yao • China Association for Science and Technology (Young Talents Plan) • ￥50,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Spatiotemporal Data-Driven Safe and Intelligent Air Traffic Management</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong> • Start-up from Sichuan University • ￥1,000,000</span>
+            </li>
+            <li>
+              <span class="pub-title">Deep Spatiotemporal Modeling for Urban Traffic Data</span>
+              <span class="pub-authors">PI: <strong>Yuankai Wu</strong>; Supervisors: Lijun Sun, Aurélie Labbe • IVADO • $140,000</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section id="students" class="section section-alt">
+        <div class="container flow">
+          <h2>Students</h2>
+          <p>Our group includes Ph.D., M.S., and undergraduate students. See the full roster on the students page.</p>
+          <div class="grid students-preview">
+            <a class="student-card" href="students-redirects.html?to=wang-lei">
+              <img src="assets/img/avatar-wang-lei.svg" alt="Avatar of Wang Lei" />
+              <div>
+                <h3>Wang Lei</h3>
+                <p>Ph.D. (2021—) • Safe Reinforcement Learning, Urban Air Mobility</p>
+              </div>
+            </a>
+            <a class="student-card" href="students-redirects.html?to=yuan-xinyun">
+              <img src="assets/img/avatar-yuan-xinyun.svg" alt="Avatar of Yuan Xinyun" />
+              <div>
+                <h3>Yuan Xinyun</h3>
+                <p>M.S. (2022—) • Data-driven Flight Delay Modeling</p>
+              </div>
+            </a>
+            <a class="student-card" href="students-redirects.html?to=cheng-jinguo">
+              <img src="assets/img/avatar-cheng-jinguo.svg" alt="Avatar of Cheng Jinguo" />
+              <div>
+                <h3>Cheng Jinguo</h3>
+                <p>M.S. (2023—) • Foundation Models for Spatiotemporal Data</p>
+              </div>
+            </a>
+          </div>
+          <p><a class="btn" href="students.html">See full student roster</a></p>
+        </div>
+      </section>
 
-<h2>Selected News</h2>
-<hr>
-(For the full list of news please check the <a href="./news.html">News</a> tab.)
+      <section id="contact" class="section">
+        <div class="container flow">
+          <h2>Contact</h2>
+          <p>For prospective students and collaborators, please email <a href="mailto:avery.kim@example.edu">avery.kim@example.edu</a>.</p>
+        </div>
+      </section>
+    </main>
 
-    <ul>
-      <li> <p> September 2024: I'm thrilled to have been selected as one of <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7">Stanford/Elsevier's Top 2% Scientists for 2023</a>! According to the data, I ranked in the top 1% for performance in 2023.</p>
-      <li> <p> March 2024: I am delighted to have been selected for the first cohort of the National Program for Recruiting Overseas Postdoctoral Talents.</p>
-      <li> <p> October 2023: I am thrilled to have been promoted to Senior Member status within the IEEE.</p>
-      <li> <p> April 2023: I am delighted to be awarded the Tianfu Emei plan of Sichuan Province.</p>
-      <li> <p> August 2022: Our <a href="https://ieeexplore.ieee.org/abstract/document/9165215">TII</a> paper has been selected to receive the <a href="https://www.ieee-ies.org/about/awards/awards-info/184-ies-tii-best-paper-award">2022 IEEE Outstanding Paper Award for TII</a>. </p>
-      <li> <p> March 2022: I am delighted to be a tenure-track professor (This is the same level as a full professor) at <a href="https://cs.scu.edu.cn/info/1279/17062.htm">College of Computer Science at Sichuan University</a>.</p>
-      <li> <p> January 2020: I am delighted to be awarded the <a
-            href="https://ivado.ca/en/spotlight-on-our-academic-community/?programmes=postdoctoral-research-funding">
-            IVADO Postdoctoral Research Funding</a>. The awarded research topic is "Deep Spatiotemporal Modeling for Urban Traffic Data". For more details on <a href = "https://ivado.ca/en/about-us/">Institute for Data Valorisation (IVADO)</a> and its mission, please check out the website.
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> College of Computer Science — Sichuan University</p>
+        <p>
+          <a href="https://scholar.google.com/citations?user=L9b-8ZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> •
+          <a href="https://github.com/Kaimaoge" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
-      </li>
-    </ul>
-<br>
-<hr>
-          
-<h3>Visitors</h3>
-<hr>
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6DHnM19h01VEFhN144i9ufWVCbC3yVS_56I7wQ-lpVI"></script>
-<br>
-<hr>
+      </div>
+    </footer>
 
-</div>
-</div>
-</div>
-
- </body>
-</html>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
