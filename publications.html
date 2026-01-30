@@ -20,6 +20,12 @@
 
 </script>
 
+  <style>
+  /* Publication thumbnail styling inserted by script */
+  .pub-thumb { float: left; margin: 0 12px 12px 0; width: 120px; height: auto; object-fit: cover; border: 1px solid #ddd; }
+  .pub-entry { overflow: hidden; }
+  </style>
+
 
   </head>
 
@@ -34,7 +40,6 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a class="active" href="publications.html">Publications</a></li>
             <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="talks.html">Talks</a></li>
             <li><a href="people.html">People</a></li>
             <li><a href="CV.html">CV</a></li>
           </ul>
@@ -152,6 +157,36 @@ which they appeared online. You can also find more about my research on
 
 <br>
 <br>
+<script>
+// Insert publication thumbnail images from assets/mg/<paper title>.jpg
+(function(){
+  try{
+    const fallback = 'assets/img/professor.jpg'; // fallback image present in repo
+    const listItems = document.querySelectorAll('#content ul > li');
+    listItems.forEach(li => {
+      const a = li.querySelector('p > a');
+      if(!a) return;
+      const title = a.textContent.trim();
+      if(!title) return;
+      const img = document.createElement('img');
+      img.className = 'pub-thumb';
+      img.alt = title;
+      // Try to load image whose filename is the paper title + .jpg inside assets/img. Use encodeURIComponent for safe URL.
+      img.src = 'assets/img/' + encodeURIComponent(title) + '.png';
+      img.onerror = function(){
+        // on error use the fallback image
+        this.onerror = null;
+        this.src = fallback;
+      };
+      // mark li as pub-entry so layout CSS can apply
+      li.classList.add('pub-entry');
+      li.insertBefore(img, li.firstChild);
+    });
+  }catch(e){
+    console && console.warn && console.warn('pub thumb script error', e);
+  }
+})();
+</script>
 </div>
 
  </body>

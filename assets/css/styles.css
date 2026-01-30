@@ -68,7 +68,7 @@ body {
 .students, .students-preview { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .student-card { display: grid; grid-template-columns: 64px auto; gap: .9rem; align-items: center; padding: .8rem; border: 1px solid var(--border); background: #ffffff; border-radius: var(--radius-sm); text-decoration: none; color: var(--text); box-shadow: var(--shadow); }
 .student-card:hover { border-color: #d1d9e8; background: #fdfefe; }
-.student-card img { width: 64px; height: 64px; border-radius: 50%; background: #f2f5fa; border: 1px solid var(--border); object-fit: cover; }
+.student-card img { width: 64px; height: 64px; border-radius: 50%; background: #f2f5fa; border: 1px solid var(--border); object-fit: cover; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality; }
 .student-card h3 { margin: 0; font-size: 1.05rem; }
 .student-card p { margin: .15rem 0 0 0; color: var(--muted); }
 
