@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Student Redirects — Prof. Avery Kim</title>
+    <title>Student Redirects — Prof. Yuankai Wu</title>
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <meta http-equiv="Cache-Control" content="no-store" />
@@ -37,24 +37,22 @@
         'liu-jia': '#'
       };
 
-      // Populate fallback list
-      const fallback = document.getElementById('fallback');
-      const entries = Object.entries(mapping);
-      for (const [slug, url] of entries) {
-        const a = document.createElement('a');
-        a.className = 'student-card';
-        a.href = url;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.innerHTML = `<div><h3>${slug.replace(/-/g, ' ')}</h3><p class="meta">Open personal homepage</p></div>`;
-        fallback.appendChild(a);
-      }
-
-      // Attempt redirect
+      // Unconfigured or incomplete URLs return to the matching roster card.
+      // Set a mapping above to a complete https:// URL when a homepage is available.
       const params = new URLSearchParams(location.search);
       const to = params.get('to');
-      if (to && mapping[to]) {
-        location.replace(mapping[to]);
+      const knownStudents = ['wang-lei', 'cheng-jinguo', 'cai-wanlin', 'zhang-zhongyue', 'sun-changbin', 'liu-yangyou', 'xu-lin', 'wu-kunming', 'zhang-chenhui', 'tang-jinfan', 'zhang-yuxuan', 'gong-xieruifeng', 'he-yuya', 'hu-jie', 'Wu-Junhui', 'Yan-Xinyue', 'xu-xin', 'cai-xinrong', 'li-chenshuo', 'liu-yiwei', 'liu-jia', 'yuan-xinyun'];
+      const validHomepage = url => typeof url === 'string' && /^https?:\/\//i.test(url);
+      const fallback = document.getElementById('fallback');
+      for (const slug of knownStudents) {
+        const a = document.createElement('a');
+        a.className = 'student-card';
+        a.href = 'students.html#' + encodeURIComponent(slug);
+        a.textContent = slug.replace(/-/g, ' ');
+        fallback.appendChild(a);
+      }
+      if (to && knownStudents.includes(to)) {
+        location.replace(validHomepage(mapping[to]) ? mapping[to] : 'students.html#' + encodeURIComponent(to));
       }
     </script>
   </body>

@@ -30,6 +30,7 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
+            <p class="eyebrow">Sichuan University · Computer Science</p>
             <h1>Prof. Yuankai Wu</h1>
             <p class="subtitle">Professor • College of Computer Science • Sichuan University</p>
             <p class="lede">
@@ -42,13 +43,13 @@
             </div>
           </div>
           <div class="hero-media">
-            <img src="assets/img/professor.jpeg" alt="Portrait of Prof. Yuankai Wu" />
+            <img src="assets/img/professor.webp" fetchpriority="high" width="800" height="800" alt="Portrait of Prof. Yuankai Wu" />
             <div class="icon-links" aria-label="External profiles">
               <a href="https://scholar.google.com/citations?user=L9b-8ZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-                <img src="assets/img/icon-scholar.svg" alt="Google Scholar" />
+                <img src="assets/img/icon-scholar.svg" alt="Google Scholar" loading="lazy" decoding="async" />
               </a>
               <a href="https://github.com/Kaimaoge" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="assets/img/icon-github.svg" alt="GitHub" />
+                <img src="assets/img/icon-github.svg" alt="GitHub" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>
@@ -103,6 +104,11 @@
           <h2>Selected News</h2>
           <ul class="pub-list">
             <li>
+              <span class="pub-title"><a href="#aletheia">ALETHEIA at NeurIPS 2026 · Evaluations and Datasets Track</a></span>
+              <span class="pub-venue">November 2026</span>
+            </li>
+
+            <li>
               <span class="pub-title">PFGNet Receives the CVPR 2026 Compute Gold Star</span>
               <span class="pub-venue">June 2026</span>
             </li>
@@ -146,18 +152,30 @@
         <div class="container flow">
           <h2>Selected Publications</h2>
           <ol class="pub-list">
+          <li class="pub-item pub-featured" id="aletheia">
+              <img class="pub-thumb" src="assets/img/aletheia.png" width="759" height="428" alt="ALETHEIA dataset overview: real thermography, multi-frequency simulations, and neural operator learning" loading="lazy" decoding="async" />
+              <div>
+                <span class="pub-title">ALETHEIA: A Multi-Frequency Eddy Current Pulsed Thermography Dataset for Neural Operator Learning in Nondestructive Testing</span>
+                <span class="pub-authors">Changbin Sun*, Jie Xiao*, Xiaotian Chen†, <strong>Yuankai Wu†</strong></span>
+                <span class="pub-venue">NeurIPS, 2026 · Evaluations and Datasets Track.</span>
+                <p class="pub-summary">A multi-frequency thermography dataset for neural operator learning in nondestructive testing, with over 4,700 simulated defect cases and real infrared measurements for forward prediction and inverse reconstruction.</p>
+                <p class="publication-note">* Equal contribution. † Corresponding authors.</p>
+                <p class="pub-links"><a class="btn" href="https://arxiv.org/pdf/2611.11252" target="_blank" rel="noopener noreferrer">Paper</a> <a class="btn" href="https://github.com/sherlock-0327/ALETHEIA" target="_blank" rel="noopener noreferrer">Code</a> <a class="btn" href="https://github.com/sherlock-0327/ALETHEIA#datasets-access" target="_blank" rel="noopener noreferrer">Data</a></p>
+              </div>
+            </li>
+
           <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/pulse.png" alt="Urban mobility disentangled representation" />
+              <img class="pub-thumb" src="assets/img/pulse.png" alt="PULSE phase evolution forecasting framework" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">PULSE: Generative Phase Evolution for Non-Stationary Time Series Forecasting</span>
                 <span class="pub-authors">Yangyou Liu, Zezhi Shao, Xinyu Chen, Hu Chen, Fei Wang, <strong>Yuankai Wu*</strong></span>
                 <span class="pub-venue">ICML, 2026.</span>
                 <p class="pub-summary">PULSE is a plug-and-play forecasting framework that disentangles phase anchors and stochastic residuals, evolves future phase structures with a generative Phase Router, and uses Statistic-Aware Mixup to achieve robust, high-performance non-stationary time series forecasting.</p>
-                 <p><a class="btn" href="https://github.com/Gemost/PULSE" target="_blank" rel="noopener noreferrer">Code</a></p> 
+                 <p><a class="btn" href="https://github.com/Gemost/PULSE" target="_blank" rel="noopener noreferrer">Code</a></p>
               </div>
             </li>
           <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/pfgnet.png" alt="Urban mobility disentangled representation" />
+              <img class="pub-thumb" src="assets/img/pfgnet.png" alt="PFGNet frequency-guided peripheral gating network" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">PFGNet: A Fully Convolutional Frequency-Guided Peripheral Gating Network for Efficient Spatiotemporal Predictive Learning</span>
                 <span class="pub-authors">Xinyong Cai, Changbin Sun, Yong Wang, Hongyu Yang, <strong>Yuankai Wu*</strong></span>
@@ -167,7 +185,7 @@
               </div>
             </li>
           <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Aeolus A Multi-structural Flight Delay Dataset.png" alt="Urban mobility disentangled representation" />
+              <img class="pub-thumb" src="assets/img/Aeolus A Multi-structural Flight Delay Dataset.png" alt="Aeolus multi-structural flight delay dataset" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Aeolus: A Multi-structural Flight Delay Dataset</span>
                 <span class="pub-authors">Lin Xu, Xinyun Yuan, Yuxuan Liang, Suwan Yin, <strong>Yuankai Wu*</strong></span>
@@ -177,7 +195,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Rethinking urban mobility prediction A multivariate time series forecasting approach.png" alt="Urban mobility disentangled representation" />
+              <img class="pub-thumb" src="assets/img/Rethinking urban mobility prediction A multivariate time series forecasting approach.png" alt="Urban mobility disentangled representation" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Rethinking urban mobility prediction: A multivariate time series forecasting approach</span>
                 <span class="pub-authors">Jinguo Cheng, Ke Li, Yuxuan Liang, Lijun Sun, Junchi Yan, <strong>Yuankai Wu*</strong></span>
@@ -186,7 +204,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Long-Term Airport Network Performance Forecasting With Linear Diffusion Graph Networks.png" alt="Airport network diffusion forecasting" />
+              <img class="pub-thumb" src="assets/img/Long-Term Airport Network Performance Forecasting With Linear Diffusion Graph Networks.png" alt="Airport network diffusion forecasting" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Long-Term Airport Network Performance Forecasting With Linear Diffusion Graph Networks</span>
                 <span class="pub-authors"><strong>Yuankai Wu</strong>, Jing Yang, Xiaoxu Chen, Yi Lin, Hongyu Yang</span>
@@ -195,7 +213,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/MSGNet Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting.png" alt="MSGNet multiscale series correlations" />
+              <img class="pub-thumb" src="assets/img/MSGNet Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting.png" alt="MSGNet multiscale series correlations" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">MSGNet: Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting</span>
                 <span class="pub-authors">Cai Wanlin, Yuxuan Liang, Xianggen Liu, Jianshuai Feng, <strong>Yuankai Wu*</strong></span>
@@ -205,7 +223,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Spatiotemporal Propagation Learning for Network-Wide Flight Delay Prediction.png" alt="Flight delay spatiotemporal propagation" />
+              <img class="pub-thumb" src="assets/img/Spatiotemporal Propagation Learning for Network-Wide Flight Delay Prediction.png" alt="Flight delay spatiotemporal propagation" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Spatiotemporal Propagation Learning for Network-Wide Flight Delay Prediction</span>
                 <span class="pub-authors"><strong>Yuankai Wu</strong>, Hongyu Yang, Yi Lin, Hong Liu</span>
@@ -215,7 +233,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Inductive Graph Neural Networks for Spatiotemporal Kriging.png" alt="IGNNK spatiotemporal kriging" />
+              <img class="pub-thumb" src="assets/img/Inductive Graph Neural Networks for Spatiotemporal Kriging.png" alt="IGNNK spatiotemporal kriging" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Inductive Graph Neural Networks for Spatiotemporal Kriging</span>
                 <span class="pub-authors"><strong>Yuankai Wu</strong>, Dingyi Zhuang, Aurelie Labbe, Lijun Sun</span>
@@ -225,7 +243,7 @@
               </div>
             </li>
             <li class="pub-item">
-              <img class="pub-thumb" src="assets/img/Deep Learning‐Based Super‐Resolution Climate Simulator‐Emulator Framework for Urban Heat Studies.png" alt="Climate super-resolution emulator" />
+              <img class="pub-thumb" src="assets/img/Deep Learning‐Based Super‐Resolution Climate Simulator‐Emulator Framework for Urban Heat Studies.png" alt="Climate super-resolution emulator" loading="lazy" decoding="async" />
               <div>
                 <span class="pub-title">Deep Learning‐Based Super‐Resolution Climate Simulator‐Emulator Framework for Urban Heat Studies</span>
                 <span class="pub-authors"><strong>Yuankai Wu</strong>, Bernardo Teufel, Laxmi Sushama, Stephane Belair, Lijun Sun</span>
@@ -239,8 +257,8 @@
 
       <section id="projects" class="section">
         <div class="container flow">
-          
-          <h3>Granted Research Funding (selected)</h3>
+
+          <h2>Granted Research Funding (selected)</h2>
           <ul class="pub-list">
             <li>
               <span class="pub-title">Construction of Traffic World Models for Connected Cooperative Driving</span>
@@ -304,21 +322,21 @@
           <p>Our group includes Ph.D., M.S., and undergraduate students. See the full roster on the students page.</p>
           <div class="grid students-preview">
             <a class="student-card" href="students-redirects.html?to=wang-lei">
-              <img src="assets/img/avatar-wang-lei.svg" alt="Avatar of Wang Lei" />
+              <img src="assets/img/avatar-wang-lei.svg" alt="Avatar of Wang Lei" loading="lazy" decoding="async" />
               <div>
                 <h3>Wang Lei</h3>
                 <p>Ph.D. (2021—) • Safe Reinforcement Learning, Urban Air Mobility</p>
               </div>
             </a>
             <a class="student-card" href="students-redirects.html?to=yuan-xinyun">
-              <img src="assets/img/avatar-yuan-xinyun.svg" alt="Avatar of Yuan Xinyun" />
+              <img src="assets/img/avatar-yuan-xinyun.svg" alt="Avatar of Yuan Xinyun" loading="lazy" decoding="async" />
               <div>
                 <h3>Yuan Xinyun</h3>
                 <p>M.S. (2022—) • Data-driven Flight Delay Modeling</p>
               </div>
             </a>
             <a class="student-card" href="students-redirects.html?to=cheng-jinguo">
-              <img src="assets/img/chengjinguo.jpg" alt="Avatar of Cheng Jinguo" />
+              <img src="assets/img/chengjinguo.jpg" alt="Avatar of Cheng Jinguo" loading="lazy" decoding="async" />
               <div>
                 <h3>Cheng Jinguo</h3>
                 <p>M.S. (2023—) • Foundation Models for Spatiotemporal Data</p>
@@ -345,19 +363,17 @@
           <a href="https://github.com/Kaimaoge" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
       </div>
+      <div class="container archive-links" aria-label="More pages">
+        <a href="news.html">News archive</a>
+        <a href="publications.html">Publication archive</a>
+        <a href="projects.html">Research funding</a>
+        <a href="cv.html">CV</a>
+      </div>
     </footer>
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    
+
   </body>
   </html>
-
-
-
-
-
-
-
-
