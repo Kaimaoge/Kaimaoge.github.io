@@ -295,6 +295,8 @@ ul.meta strong { display: inline-block; min-width: 94px; font-size: .82rem; }
 .student-card h3 { margin: 0; font-size: .92rem; line-height: 1.45; }
 .student-card p { margin: 5px 0 0; color: var(--muted); font-size: .77rem; line-height: 1.65; }
 .student-card .meta { font-size: .72rem; }
+.student-card .dest { display: flex; align-items: center; gap: 6px; color: var(--brand); }
+.student-card .dest img { width: 15px; height: 15px; border-radius: 2px; object-fit: contain; background: none; }
 main.section { min-height: calc(100vh - 190px); padding-block: 64px 80px; }
 main.section > .container > h1 { margin-bottom: 15px; }
 main.section > .container > h1 + p { max-width: 690px; color: var(--muted); }
