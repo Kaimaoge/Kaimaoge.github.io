@@ -34,14 +34,18 @@
         'zhang-chenhui': '#',
         'tang-jinfan': '#',
         'zhang-yuxuan': '#',
-        'liu-jia': '#'
+        'liu-jia': '#',
+        'wu-lili': '#',
+        'zhang-yiting': '#',
+        'ye-peizi': '#',
+        'dong-qingyu': '#'
       };
 
       // Unconfigured or incomplete URLs return to the matching roster card.
       // Set a mapping above to a complete https:// URL when a homepage is available.
       const params = new URLSearchParams(location.search);
       const to = params.get('to');
-      const knownStudents = ['wang-lei', 'cheng-jinguo', 'cai-wanlin', 'zhang-zhongyue', 'sun-changbin', 'liu-yangyou', 'xu-lin', 'wu-kunming', 'zhang-chenhui', 'tang-jinfan', 'zhang-yuxuan', 'gong-xieruifeng', 'he-yuya', 'hu-jie', 'Wu-Junhui', 'Yan-Xinyue', 'xu-xin', 'cai-xinrong', 'li-chenshuo', 'liu-yiwei', 'liu-jia', 'yuan-xinyun'];
+      const knownStudents = ['wang-lei', 'cheng-jinguo', 'cai-wanlin', 'zhang-zhongyue', 'sun-changbin', 'liu-yangyou', 'xu-lin', 'wu-kunming', 'zhang-chenhui', 'tang-jinfan', 'zhang-yuxuan', 'gong-xieruifeng', 'he-yuya', 'hu-jie', 'Wu-Junhui', 'Yan-Xinyue', 'xu-xin', 'cai-xinrong', 'li-chenshuo', 'liu-yiwei', 'liu-jia', 'yuan-xinyun', 'wu-lili', 'zhang-yiting', 'ye-peizi', 'dong-qingyu'];
       const validHomepage = url => typeof url === 'string' && /^https?:\/\//i.test(url);
       const fallback = document.getElementById('fallback');
       for (const slug of knownStudents) {
